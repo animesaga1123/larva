@@ -14,10 +14,10 @@ const TokenomicsSection = () => {
     <section id="tokenomics" className="relative py-20 md:py-32 overflow-hidden">
       {/* Space Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-cover bg-center opacity-50"
         style={{ backgroundImage: `url(${spaceBackground})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}

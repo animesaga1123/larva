@@ -38,10 +38,10 @@ const WhyLarvaSection = () => {
     <section id="why" className="relative py-20 md:py-32 overflow-hidden">
       {/* Background spaceship image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-10"
+        className="absolute inset-0 bg-cover bg-center opacity-25"
         style={{ backgroundImage: `url(${larvaSpaceship})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}
