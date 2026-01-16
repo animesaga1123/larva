@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import larvaOnMars from "@/assets/larva-on-mars.jpeg";
-import larvaVideo from "@/assets/larva-video.mp4";
 
 const AboutSection = () => {
   return (
@@ -53,29 +52,6 @@ const AboutSection = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Video Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-16"
-        >
-          <h3 className="font-display text-2xl md:text-3xl text-center text-foreground mb-8">
-            🎬 Watch the <span className="text-primary">Larva</span> in action!
-          </h3>
-          <div className="max-w-3xl mx-auto rounded-3xl overflow-hidden border-4 border-primary/30 shadow-glow">
-            <video
-              src={larvaVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-            />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
