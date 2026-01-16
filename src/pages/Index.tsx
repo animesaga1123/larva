@@ -1,12 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import StarField from "@/components/StarField";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import WhyLarvaSection from "@/components/WhyLarvaSection";
+import SocialProofSection from "@/components/SocialProofSection";
+import TokenomicsSection from "@/components/TokenomicsSection";
+import CommunitySection from "@/components/CommunitySection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Star Field Background */}
+      <StarField />
+      
+      {/* Navigation */}
+      <Navbar />
+      
+      {/* Main Content */}
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <WhyLarvaSection />
+        <SocialProofSection />
+        <TokenomicsSection />
+        <CommunitySection />
+      </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
