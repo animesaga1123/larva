@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Globe } from "lucide-react";
+import { Send, Instagram, Youtube } from "lucide-react";
 import larvaLogo from "@/assets/larva-logo.jpeg";
 
 const socials = [
   {
     name: "Telegram",
-    icon: MessageCircle,
-    href: "#",
+    icon: Send,
+    href: "https://t.me/Larvasol",
     color: "bg-[#0088cc]",
     hoverColor: "hover:bg-[#006fa0]",
   },
@@ -17,16 +17,23 @@ const socials = [
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
-    href: "#",
+    href: "https://x.com/LarvainMars",
     color: "bg-foreground",
     hoverColor: "hover:bg-foreground/80",
   },
   {
-    name: "Website",
-    icon: Globe,
-    href: "#",
-    color: "bg-gradient-cta",
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/larvainmars.official/",
+    color: "bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888]",
     hoverColor: "hover:opacity-90",
+  },
+  {
+    name: "YouTube",
+    icon: Youtube,
+    href: "https://www.youtube.com/@Larvatuba",
+    color: "bg-[#FF0000]",
+    hoverColor: "hover:bg-[#cc0000]",
   },
 ];
 
