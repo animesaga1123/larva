@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Video, Youtube, Instagram } from "lucide-react";
+import larvaFriends from "@/assets/larva-friends.jpeg";
 
 const stats = [
   {
@@ -69,8 +70,13 @@ const SocialProofSection = () => {
 
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-20"
+        style={{ backgroundImage: `url(${larvaFriends})` }}
+      />
       {/* Decorative background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-space-purple/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}

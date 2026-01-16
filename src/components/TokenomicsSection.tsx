@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Coins, Zap, Gift, Shield } from "lucide-react";
+import spaceBackground from "@/assets/space-background.jpeg";
 
 const tokenInfo = [
   { icon: Coins, label: "Chain", value: "Solana", color: "text-primary" },
@@ -10,8 +11,15 @@ const tokenInfo = [
 
 const TokenomicsSection = () => {
   return (
-    <section id="tokenomics" className="relative py-20 md:py-32">
-      <div className="container mx-auto px-4">
+    <section id="tokenomics" className="relative py-20 md:py-32 overflow-hidden">
+      {/* Space Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-30"
+        style={{ backgroundImage: `url(${spaceBackground})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

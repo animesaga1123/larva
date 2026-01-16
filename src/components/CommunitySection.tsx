@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Send, Instagram, Youtube } from "lucide-react";
 import larvaLogo from "@/assets/larva-logo.jpeg";
+import larvaAstronauts from "@/assets/larva-astronauts.jpeg";
 
 const socials = [
   {
@@ -40,8 +41,13 @@ const socials = [
 const CommunitySection = () => {
   return (
     <section id="community" className="relative py-20 md:py-32 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${larvaAstronauts})` }}
+      />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-space-purple/30 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}

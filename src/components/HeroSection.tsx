@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Rocket, MessageCircle } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpeg";
+import heroBackground from "@/assets/larva-mars-terrain.jpeg";
 
 const taglines = [
   "No utility. No promises. Just Larva on Mars.",
