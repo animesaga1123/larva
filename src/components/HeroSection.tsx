@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Rocket, MessageCircle } from "lucide-react";
-import heroBackground from "@/assets/larva-mars-terrain.jpeg";
+import larvaVideo from "@/assets/larva-video.mp4";
 
 const taglines = [
   "No utility. No promises. Just Larva on Mars.",
@@ -23,12 +23,18 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+      {/* Video Background */}
+      <div className="absolute inset-0">
+        <video
+          src={larvaVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
       </div>
 
       {/* Content */}
