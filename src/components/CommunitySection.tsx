@@ -43,11 +43,11 @@ const CommunitySection = () => {
     <section id="community" className="relative py-20 md:py-32 overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-15"
+        className="absolute inset-0 bg-cover bg-center opacity-35"
         style={{ backgroundImage: `url(${larvaAstronauts})` }}
       />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Title */}
